@@ -14,8 +14,8 @@ public class HelloWorldClient {
 		Session session = HIbernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
 		
-		Message message = new Message("thrid message form code");
-		
+		Message message = new Message("Hello again from annotations");
+				
 		session.save(message);
 		
 		session.getTransaction().commit();
